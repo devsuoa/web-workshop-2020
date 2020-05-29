@@ -4,10 +4,35 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1 class = "message">
-            Halo W0rldz!
-        </h1>
+        <div id = "main-page">
+            <h1 id = "title">
+                Our Awesome Recipe App!
+            </h1>
+            
+            <div id = "inputs-div">
+                <div id = "add-recipes-div">
+                    <p>Recipe name:</p>
+                    <input id = "recipe-name" type="text">
+                    <p>Recipe content:</p>
+                    <textarea id = "recipe-content" type="text"></textarea>
+                    <div id = "buttons">
+                        <button id = "submit-recipe">Submit</button>
+                        <button id = "refresh-recipes">Refresh Recipes</button>
+                    </div>                
+                </div>
 
+                <div id = "delete-recipes-div">
+                    <p>Recipe id to delete:</p>
+                    <input id = "recipe-id-to-delete" type="text">
+                    <div id = "buttons">
+                        <button id = "delete-recipe">Delete</button>
+                    </div>                
+                </div>
+            </div>
+        </div>
+
+        <div id = "recipes-div"></div>
+        
         <script src="index.js"></script>
     </body>
 </html>
